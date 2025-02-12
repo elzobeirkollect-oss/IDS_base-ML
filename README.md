@@ -4,6 +4,7 @@
 ## Overview
 
 This project implements a real-time intrusion detection system using machine learning models to detect and classify network attacks. It leverages the UNSW-NB15 dataset to train models such as Random Forest, Decision Tree, and XGBoost to classify network traffic as either normal or malicious.
+The system automatically sends an email alert when malicious traffic is detected.
 
 ## Installation
 
