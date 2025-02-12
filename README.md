@@ -39,22 +39,15 @@ pip install -r requirements.txt
 
 ## Usage
 
-1. **Train the Model:**
+. **Real-Time Intrusion Detection:**
 
-    Run the following script to train the machine learning model:
-    
-    ```bash
-    python real_time_ids_drop.py
-    ```
-
-    This script preprocesses the data and trains the machine learning models like Random Forest, Decision Tree, and XGBoost, saving the best performing model for later use.
-
-2. **Real-Time Intrusion Detection:**
-
-    Once the model is trained, run the following script for real-time detection:
-    
+      
     ```bash
     python real_time_ids.py
+    ```
+
+    ```bash
+    python real_time_ids_drop.py
     ```
 
     This script captures network traffic in real time, processes it, and classifies it using the trained model.
@@ -66,8 +59,6 @@ pip install -r requirements.txt
 ## Interface Selection
 
 When running the system, the user will be prompted to choose a network interface from the available options. The following is an example of the prompt:
-
-![Interface Selection](data/Screenshot%202025-02-13%20003125.png)
 
 Example:
 
