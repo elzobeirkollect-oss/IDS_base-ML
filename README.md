@@ -3,7 +3,7 @@
 
 ## Overview
 
-This project is a real-time intrusion detection system that uses machine learning models to detect and classify network attacks. It uses the UNSW-NB15 dataset to train models like Random Forest, Decision Tree, and XGBoost to classify network traffic as normal or malicious.
+This project implements a real-time intrusion detection system using machine learning models to detect and classify network attacks. It leverages the UNSW-NB15 dataset to train models such as Random Forest, Decision Tree, and XGBoost to classify network traffic as either normal or malicious.
 
 ## Installation
 
@@ -14,13 +14,13 @@ To run this project, ensure you have the following dependencies installed:
 - Python 3.x
 - Libraries specified in `requirements.txt`
 
-You can install the necessary libraries by running:
+Install the necessary libraries with the following command:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Setting up the Project
+### Setting Up the Project
 
 1. Clone this repository:
 
@@ -35,32 +35,28 @@ pip install -r requirements.txt
     pip install -r requirements.txt
     ```
 
-3. Ensure you have the dataset files (`NSW-NB15`) in the correct directory for training.
-
 ## Usage
 
-. **Real-Time Intrusion Detection:**
+### Real-Time Intrusion Detection
 
-      
-    ```bash
-    python real_time_ids.py
-    ```
+Run either of the following scripts for real-time intrusion detection:
 
-    ```bash
-    python real_time_ids_drop.py
-    ```
+```bash
+python real_time_ids.py
+```
 
-    This script captures network traffic in real time, processes it, and classifies it using the trained model.
+OR
 
-    **Note**: 
-    - `real_time_ids_drop.py` **captures traffic only from selected protocols** and ignores others.
-    - `real_time_ids.py` **captures all traffic passing through all protocols** and classifies unselected services as "unknown."
+```bash
+python real_time_ids_drop.py
+```
 
-## Interface Selection
+- **`real_time_ids.py`** captures **all traffic passing through all protocols** and classifies unselected services as "unknown."
+- **`real_time_ids_drop.py`** captures traffic **only from selected protocols** and ignores others.
 
-When running the system, the user will be prompted to choose a network interface from the available options. The following is an example of the prompt:
+### Interface Selection
 
-Example:
+When running the system, the user will be prompted to choose a network interface from the available options. Example:
 
 ```
 Available network interfaces:
@@ -73,7 +69,7 @@ Starting packet capture...
 
 This allows the user to select the appropriate interface for monitoring network traffic in real time.
 
-## Email Alerts
+### Email Alerts
 
 The system will automatically send an email alert if it detects malicious traffic. Before using the email alert system, you need to configure the email settings:
 
