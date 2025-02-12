@@ -63,10 +63,6 @@ This allows the user to select the appropriate interface for monitoring network 
 
 ## Files
 
-- **`real_time_ids_drop.py`**: Script to preprocess data and train the machine learning models.
-  - This script handles the preprocessing of the dataset (such as feature extraction and handling missing values) and trains the machine learning models like Random Forest, Decision Tree, and XGBoost.
-  - It saves the trained models and preprocessing tools (such as scaler and label encoder) for later use in the real-time detection script.
-
 - **`real_time_ids.py`**: Real-time intrusion detection script that captures traffic and classifies it using the trained model.
   - This script captures network traffic in real time using a packet-sniffing tool (Scapy), processes the data, and classifies it using the model trained by `real_time_ids_drop.py`.
   - If an attack is detected, it triggers an email alert with details about the threat.
