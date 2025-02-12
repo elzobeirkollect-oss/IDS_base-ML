@@ -48,7 +48,7 @@ python real_time_ids.py
 OR
 
 ```bash
-python real_time_ids_drop.py
+python real_time_ids_Drop.py
 ```
 
 - **`real_time_ids.py`** captures **all traffic passing through all protocols** and classifies unselected services as "unknown."
