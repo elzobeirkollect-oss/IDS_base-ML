@@ -25,8 +25,8 @@ pip install -r requirements.txt
 1. Clone this repository:
 
     ```bash
-    git clone https://github.com/your-username/ml-ids.git
-    cd ml-ids
+    git clone https://github.com/ElzobeirM/IDS_base-ML.git
+    cd IDS_base-ML
     ```
 
 2. Install the required packages:
